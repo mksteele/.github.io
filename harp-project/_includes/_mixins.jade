@@ -5,53 +5,22 @@
     of the file.
     =========================
 
-//- Include _functions.jade so you only have to include _mixins everywhere else
-
-include _functions
-
-
-//- Simple link styled as a button
-
-mixin button(link)
-    a.button(href=link)
-        
-        //- Children of the mixin, i.e. button text, are added as block
-        
-        block
-
-
-//- Inline image
-
-//mixin image(file, alt)
-//    .image
-//        img(src="/content/img/" + file alt=alt)
-
 mixin image(file, alt, width, height)
     .image
         img(src="/content/img/" + file alt=alt width=width height=height)
+
+//- A canvas used to display a processing sketch
+mixin canvas(src)
+    .canvas
+        canvas#bg(data-processing-sources="/content/sketches/" + src)
 
 
 //- YouTube Video embed
 
 mixin youtube(id)
     .video
-        
+
         //- Add YouTube video ID and include as iframe
-        
+
         iframe(src='https://www.youtube.com/embed/' + id frameborder='0' allowfullscreen)
 
-
-//- Blockquote
-
-mixin quote(source)
-    blockquote.quote
-        p.quote-text
-            
-            //- Children of the mixin, i.e. quote text, are added as block
-            
-            block
-
-        //- If a source argument is specified, display quote footer
-
-        if source
-            footer.quote-source=source
