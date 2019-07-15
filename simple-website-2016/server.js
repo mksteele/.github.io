@@ -32,10 +32,10 @@ app.get('/sketches', function (req, res, next) {
     } catch (e) {
         next(e)
     }
-})
+});
 
-//app.render('homepage', {locals:{title: 'edit your blog', posts: "something"}});
+//app.render('homepage', {locals:{title: 'edit your content', posts: "something"}});
 
 app.listen(process.env.PORT || 3000, function () {
   console.log('Listening on http://localhost:' + (process.env.PORT || 3000))
-})
+});

@@ -1,0 +1,36 @@
+//- Blog index
+    =========================
+    This is the blog index that shows previews of your blog posts.
+    =========================
+extend content/processing
+
+//- Include mixins from global mixins file
+include _includes/_mixins
+
+block style
+    link(rel='stylesheet', href='/css/homepage.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:300,400')
+
+block nav-content
+    p.h1 mksteele
+    //p.h2 ###
+
+block content
+    //script.
+    //  console.log("#{message}");
+    //  var message = "Miranda"
+
+    .main-content
+        #top-content
+            #nightsky
+                canvas#bg(data-processing-sources='/sketches/nightsky.pde')
+            #photo1
+                +image("exhibit1.JPG", "Exhibit 1", width=615, height=450)
+                //img(src='/img/exhibit1.JPG')
+
+        #bottom-content
+            #photo2
+                img(src='/img/exhibit2.jpg', width=535, height=233)
+
+            #tati-photo
+                img(src='/img/tati.gif')
