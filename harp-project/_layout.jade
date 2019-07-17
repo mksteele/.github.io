@@ -19,7 +19,7 @@ html
                 !=sitename
 
             else
-                | #{title} | #{sitename}
+                | #{sitename} | #{title}
 
     body
 
@@ -34,12 +34,6 @@ html
                 //- If this is the blog index, simply show the content directly
 
                 !=yield
-
-            else if current.path[0] == 'blog'
-
-                //- If this is part of the /blog folder, include _post.jade
-
-                !=partial("_includes/_post")
 
             else
 

@@ -13,14 +13,3 @@ mixin image(file, alt, width, height)
 mixin canvas(src)
     .canvas
         canvas#bg(data-processing-sources="/content/sketches/" + src)
-
-
-//- YouTube Video embed
-
-mixin youtube(id)
-    .video
-
-        //- Add YouTube video ID and include as iframe
-
-        iframe(src='https://www.youtube.com/embed/' + id frameborder='0' allowfullscreen)
-
