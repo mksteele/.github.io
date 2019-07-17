@@ -6,9 +6,7 @@
         "twitter": "mirandaksteele",
 
         "navigation": [
-            { "title" : "Home", "link": "/" },
-            { "title" : "About", "link": "/about" },
-            { "title" : "Third thing", "link": "/about" }
+            { "title" : "mksteele", "link": "/" }
         ]
     }
 }

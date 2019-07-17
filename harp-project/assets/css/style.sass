@@ -13,6 +13,7 @@ $font-secondary: Andale Mono, sans-serif
 
 $color-text: #000
 $color-bg: #fff
+$margin-top: 30px
 
 // Width of the main image area
 
@@ -42,10 +43,11 @@ body
     //background: $color-bg
     color: $color-text
     font: normal normal 1.6rem/#{1.65} $font-primary
-    min-width: 1000px
+    min-width: $width-content
 
 main
-    margin: 0 auto
+    margin: $margin-top 0 40px 0
+    float: left
     width: $width-content
 
     //width 100%
@@ -53,20 +55,20 @@ main
 
 div
     float: left
-
-img
-    padding: 0px
+//
+//img
+//    padding: 0
 
 
 // Some simple spacing for the home page
-//#top-content
-    //padding-bottom: 10px
+#top-content
+    padding-bottom: 8px
 
 #photo1
-    padding-left: 10px
+    padding-left: 15px
 
 #tati-photo
-    padding-left: 10px
+    padding-left: 15px
 
 #nightsky
     width: 240px
