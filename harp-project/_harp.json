@@ -6,7 +6,10 @@
         "twitter": "mirandaksteele",
 
         "navigation": [
-            { "title" : "mksteele", "link": "/" }
+            { "title" : "mksteele", "link": "/" },
+            { "title" : "about", "link": "/" },
+            { "title" : "exhibitions", "link": "/" },
+            { "title" : "sketches", "link": "/" }
         ]
     }
 }

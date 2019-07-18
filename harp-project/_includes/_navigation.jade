@@ -6,11 +6,8 @@
     =========================
 
 nav.navigation
-    p
-        miranda
     ul
         //- Use navigation items set in _harp.json and loop through them
-        
         each item in navigation
             li
                 a(href=item.link)=item.title

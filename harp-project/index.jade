@@ -7,16 +7,15 @@
 include _includes/_mixins
 
 block content
-    .main-content
-        #top-content
-            #nightsky
-                +canvas('nightsky.pde')
-            #photo1
-                +image("exhibit1.jpg", "Exhibit 1", 615, 450)
+    #top-content
+        #nightsky
+            +canvas('nightsky.pde')
+        #photo1
+            +image("exhibit1.jpg", "Exhibit 1", 615, 450)
 
-        #bottom-content
-            #photo2
-                +image("exhibit2.jpg", "Exhibit 2", 535, 233)
+    #bottom-content
+        #photo2
+            +image("exhibit2.jpg", "Exhibit 2", 535, 233)
 
-            #tati-photo
-                +image("tati.gif", "Tati gif")
+        #tati-photo
+            +image("tati.gif", "Tati gif")
