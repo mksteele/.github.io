@@ -7,9 +7,9 @@
 
         "navigation": [
             { "title" : "mksteele", "link": "/" },
-            { "title" : "about", "link": "/" },
-            { "title" : "exhibitions", "link": "/" },
-            { "title" : "sketches", "link": "/" }
+            { "title" : "about", "link": "/about" },
+            { "title" : "exhibitions", "link": "/exhibitions" },
+            { "title" : "sketches", "link": "/sketches" }
         ]
     }
 }
