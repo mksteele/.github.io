@@ -1,0 +1,32 @@
+$font-primary: Andale Mono, Tahoma, Geneva, sans-serif
+$font-secondary: Andale Mono, sans-serif
+
+$color-text: #000
+$color-bg: #fff
+$margin-top: 30px
+
+//  Imports
+@import navigation
+
+@font-face
+  font-family: "romana"
+  src: url("../static/fonts/romanabtroman.ttf")
+
+//  General Styles
+    =========================
+
+body
+  color: $color-text
+  font: normal normal 1.6rem/#{1.65} $font-primary
+
+
+.index-content
+    float: left
+    width: 80%
+    height: 100%
+    margin: 30px 0 40px 20px
+
+%meta
+  font: normal normal 1.2rem $font-secondary
+  letter-spacing: 1px
+  text-transform: uppercase

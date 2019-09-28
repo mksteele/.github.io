@@ -1,0 +1,15 @@
+{
+  "globals": {
+    "sitename": "Miranda Steele",
+    "author": "Miranda Steele",
+    "email": "steelmir@gmail.com",
+    "twitter": "mirandaksteele",
+
+    "navigation": [
+      { "title" : "mksteele", "link": "/" },
+      { "title" : "about", "link": "/about" },
+      { "title" : "exhibitions", "link": "/exhibitions" },
+      { "title" : "sketches", "link": "/sketches" }
+    ]
+  }
+}
