@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "romana";
+  src: url("../static/fonts/romanabtroman.ttf"); }
+
+body {
+  color: #000;
+  font: normal normal 1.6rem/1.65 Andale Mono, Tahoma, Geneva, sans-serif; }
+
+.navigation li {
+  font: normal normal 1.2rem Andale Mono, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.navigation {
+  width: 10%;
+  float: left;
+  padding: 40px 20px 30px 50px;
+  background-color: #80bdff; }
+  .navigation ul {
+    list-style: none; }
+  .navigation li {
+    padding-bottom: 10px; }
+  .navigation li:hover {
+    font-weight: bold; }
+
+.main {
+  background-color: #80bdff;
+  float: left;
+  width: 80%;
+  height: 100%;
+  margin: 30px 0 40px 20px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
