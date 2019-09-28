@@ -17,8 +17,7 @@ $margin-top: 30px
 
 // Width of the main image area
 
-$width-content: 1200px
-
+$width-content: 1400 // TODO:
 
 //  Imports
     =========================
@@ -35,7 +34,6 @@ $width-content: 1200px
 @import navigation
 @import footer
 
-
 //  General Styles
     =========================
 
@@ -43,7 +41,7 @@ body
     //background: $color-bg
     color: $color-text
     font: normal normal 1.6rem/#{1.65} $font-primary
-    min-width: $width-content
+    width: $width-content
 
 main
     //float: left
@@ -53,13 +51,12 @@ main
 
 .main-content
     float: left
-    width: 870px
+    width: 80%
     height: 100%
     margin: 30px 0 40px 20px
 
     div
         float: left
-
 
     // Some simple spacing for the home page
     #top-content

@@ -7,7 +7,7 @@
 
 mixin image(file, alt, width, height)
     .image
-        img(src="./content/img/" + file alt=alt width=width height=height)
+        img(src="./content/img/" + file alt=alt style="max-width:100%")
 
 //- A canvas used to display a processing sketch
 mixin canvas(src)
