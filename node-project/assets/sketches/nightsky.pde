@@ -13,8 +13,6 @@ Star[] stars;
 int topBuffer = 140;
 
 void setup() {
-  //$("#container").height($(document).height()+40);
-
   // Trying to do something intelligent here on resize
   // Either we start out with too few stars, or 
   //oldH= $(document).height() + topBuffer;

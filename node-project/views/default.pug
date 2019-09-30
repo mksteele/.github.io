@@ -6,10 +6,11 @@ html
         link(rel='stylesheet', href='/css/style.css')
         meta(name="viewport" content="width=device-width, initial-scale=1")
     body
-        nav.navigation
-            ul
-                each item in data.navigation
-                    li
-                        a(href=item.link)=item.title
-        .main
-            block content
+        .center
+            nav.navigation
+                ul
+                    each item in data.navigation
+                        li
+                            a(href=item.link)=item.title
+            .main
+                block content

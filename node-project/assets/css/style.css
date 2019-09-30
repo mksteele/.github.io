@@ -1,21 +1,9 @@
-@font-face {
-  font-family: "romana";
-  src: url("../static/fonts/romanabtroman.ttf"); }
-
-body {
-  color: #000;
-  font: normal normal 1.6rem/1.65 Andale Mono, Tahoma, Geneva, sans-serif; }
-
-.navigation li {
-  font: normal normal 1.2rem Andale Mono, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase; }
-
 .navigation {
-  width: 10%;
+  width: 15%;
   float: left;
   padding: 40px 20px 30px 50px;
-  background-color: #80bdff; }
+  text-align: left;
+  background-color: #00a8e6; }
   .navigation ul {
     list-style: none; }
   .navigation li {
@@ -23,13 +11,52 @@ body {
   .navigation li:hover {
     font-weight: bold; }
 
+.index-content {
+  visibility: hidden; }
+  .index-content div {
+    float: left; }
+  .index-content #top-content {
+    padding-bottom: 8px;
+    width: 100%;
+    height: 100%; }
+  .index-content #nightsky {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+  .index-content #photo1 {
+    padding-left: 15px;
+    max-width: 989px; }
+  .index-content #tati-photo {
+    padding-left: 15px; }
+  .index-content #bg {
+    width: 100%; }
+
+@font-face {
+  font-family: "din";
+  src: url("../fonts/D-DIN.otf"); }
+
+html {
+  font-size: 12px; }
+
+body {
+  color: #000;
+  text-align: center; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.navigation li {
+  font: normal normal 1.2rem Andale Mono, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
 .main {
-  background-color: #80bdff;
   float: left;
-  width: 80%;
+  width: 75%;
   height: 100%;
   margin: 30px 0 40px 20px; }
 
-a {
-  text-decoration: none;
-  color: #000; }
+.center {
+  width: 85%;
+  height: 100%;
+  display: inline-block; }

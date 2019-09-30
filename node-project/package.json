@@ -4,7 +4,7 @@
   "description": "A simple website built with Node, Express and Pug",
   "main": "server.js",
   "scripts": {
-    "sass": "node-sass -w sass -o static/css",
+    "sass": "node-sass -w sass -o assets/css",
     "nodemon": "npx nodemon server.js",
     "start": "npm-run-all -p sass nodemon"
   },

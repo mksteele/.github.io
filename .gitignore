@@ -2,3 +2,4 @@ harp-project/www
 harp-project/node_modules
 node-project/node_modules
 .idea
+.DS_Store

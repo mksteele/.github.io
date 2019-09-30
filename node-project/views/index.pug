@@ -1,18 +1,20 @@
 extends default
 block content
-    #top-content
-        #nightsky
-            canvas#bg(data-processing-sources="sketches/nightsky.pde")
-        #photo1
-            img(src="images/exhibit1.jpg", alt="Exhibit 1")
+    .index-content
+        #top-content
+            #nightsky
+                canvas#bg(data-processing-sources="sketches/nightsky.pde")
+            #photo1
+                img(src="images/exhibit1.jpg", alt="Exhibit 1" width="100%")
 
-    #bottom-content
-        #photo2
-            img(src="images/exhibit2.jpg", alt="Exhibit 2")
+        #bottom-content
+            #photo2
+                img(src="images/exhibit2.jpg", alt="Exhibit 2" width="100%")
 
-        #tati-photo
-            img(src="images/tati.gif", alt="Tati gif")
+            #tati-photo
+                img(src="images/tati.gif", alt="Tati gif" width="100%")
 
     // Javascript
     script(src="js/jquery-1.7.1.min.js")
     script(src="js/processing-1.3.6.js")
+    script(src="js/resize-index.js")
