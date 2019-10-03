@@ -4,6 +4,15 @@
     custom mixins here. To use them, make sure _mixins is included at the top 
     of the file.
     =========================
+mixin scriptmix()
+    div.isitcallingthis
+        script.
+            console.log('test')
+
+mixin galleryImg(file, width, height)
+    .gallery
+        a(target="_blank" href="./content/img/exhibitions/" + file)
+            img(src="./content/img/exhibitions/" + file width=width height=height)
 
 mixin image(file, alt, width, height)
     .image

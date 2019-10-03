@@ -7,15 +7,17 @@
 include _includes/_mixins
 
 block content
-    #top-content
-        #nightsky
-            +canvas('nightsky.pde')
-        #photo1
-            +image("exhibit1.jpg", "Exhibit 1", 615, 450)
+    .index-content
+        #top-content
+            #nightsky
+                canvas#bg(data-processing-sources="./content/sketches/nightsky.pde")
+            #photo1
+                img(src="./content/img/index/exhibit1.jpg" alt="Exhibit 1" width="100%")
 
-    #bottom-content
-        #photo2
-            +image("exhibit2.jpg", "Exhibit 2", 535, 233)
+        #bottom-content
+            #photo2
+                img(src="./content/img/index/exhibit2.jpg" alt="Exhibit 2" width="100%")
 
-        #tati-photo
-            +image("tati.gif", "Tati gif")
+            #tati-photo
+                img(src="./content/img/index/tati.gif" alt="Tati gif" width="100%")
+

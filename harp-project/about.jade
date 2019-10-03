@@ -1,3 +1,18 @@
 //- About Page
 
-p I'm a software engineer at Pure Storage.
+mixin icon(file)
+    .social-icon
+        img(src="./content/img/about/" + file)
+
+
+p Miranda Steele is a software engineer in San Francisco, California. She currently works in Java and Python on middleware code.
+div#social-icon-container
+    +icon("twitter.png")
+    +icon("linkedin.png")
+    +icon("github.png")
+
+br
+h4 Links
+a(href="https://www.sfgate.com/entertainment/article/killer-queen-video-game-sf-arcade-bar-14006662.php") Want to make friends in San Francisco? Play 'Killer Queen,' the latest arcade bar craze
+br
+a(href="https://blog.purestorage.com/cli-scripting-by-miranda-steele-guest-blogger/") CLI Scripting by Miranda Steele, Guest Blogger
