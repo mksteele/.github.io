@@ -22,7 +22,7 @@ function setIndexSizes() {
 
     const nightSkyWidth = Math.floor(widthMain * 0.25) - padding;
     const exhibit1Width = Math.floor(widthMain * 0.75);
-    const exhibit2Width =  Math.floor(widthMain * 0.62);
+    const exhibit2Width =  Math.floor(widthMain * 0.64);
     const tatiWidth = (nightSkyWidth + exhibit1Width) - exhibit2Width;
 
     exhibit1Elem.width(exhibit1Width);

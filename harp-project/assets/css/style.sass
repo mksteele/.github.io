@@ -6,7 +6,7 @@
 // Fonts on the site (primary = main text, secondary = headlines / special)
 
 $font-primary: Andale Mono, Tahoma, Geneva, sans-serif
-$font-secondary: Andale Mono, sans-serif
+$font-secondary: din, sans-serif
 
 //Akkurat-Mono,Andale Mono,sans-serif
 // General colors
@@ -27,6 +27,10 @@ $margin-top: 30px
     font-family: "romana"
     src: url("../fonts/romanabtroman.ttf")
 
+@font-face
+    font-family: "din"
+    src: url("../fonts/D-DIN.otf")
+
 // Import files from this folder
 
 @import reset
@@ -40,8 +44,14 @@ $margin-top: 30px
 body
     //background: $color-bg
     color: $color-text
-    font: normal normal 1.6rem/#{1.65} $font-primary
+    font: normal normal 1.6rem/#{1.65} $font-secondary
     text-align: center
+
+h2,h3,h4
+    font-family: $font-primary
+
+h3.title
+    padding-bottom: 20px
 
 .main
     float: left
@@ -52,8 +62,7 @@ body
     text-align: left
 
 .center
-    width: 85%
-    height: 100%
+    margin: 30px auto 0 auto
     display: inline-block
 
 
@@ -94,7 +103,7 @@ body
 // Style for special meta text
 
 %meta
-    font: normal normal 1.2rem $font-secondary
+    font: normal normal 1.2rem $font-primary
     letter-spacing: 1px
     text-transform: uppercase
     text-align: left

@@ -1,20 +1,22 @@
 //- About Page
 
-mixin icon(file)
+mixin icon(link, file)
     .social-icon
-        img(src="./content/img/about/" + file)
+        a(href=link)
+            img(src="./content/img/about/" + file)
 
 
-p Miranda Steele is a software engineer in San Francisco, California. She currently works in Java and Python on middleware code.
+p Miranda Steele is a software engineer in San Francisco, California. She currently works in Java and Python on her company's CLI and REST API code.
 br
 div#social-icon-container
-    +icon("twitter.png")
-    +icon("linkedin.png")
-    +icon("github.png")
+    +icon("https://twitter.com/mirandaksteele", "twitter.png")
+    +icon("https://www.linkedin.com/in/miranda-steele-05343149/", "linkedin.png")
+    +icon("https://github.com/mksteele", "github.png")
 br
 br
 br
-h4 Links
-a(href="https://www.sfgate.com/entertainment/article/killer-queen-video-game-sf-arcade-bar-14006662.php") Want to make friends in San Francisco? Play 'Killer Queen,' the latest arcade bar craze
-br
-a(href="https://blog.purestorage.com/cli-scripting-by-miranda-steele-guest-blogger/") CLI Scripting by Miranda Steele, Guest Blogger
+ul Links
+li
+    a(href="https://www.sfgate.com/entertainment/article/killer-queen-video-game-sf-arcade-bar-14006662.php") Want to make friends in San Francisco? Play 'Killer Queen,' the latest arcade bar craze
+li
+    a(href="https://blog.purestorage.com/cli-scripting-by-miranda-steele-guest-blogger/") CLI Scripting by Miranda Steele, Guest Blogger
