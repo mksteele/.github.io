@@ -9,13 +9,16 @@ include _includes/_mixins
 block content
     .index-content
         #top-content
-            #nightsky
-                canvas#bg(data-processing-sources="./content/sketches/nightsky.pde")
-            img#photo1(src="./content/img/index/exhibit1.jpg" alt="Exhibit 1" width="100%")
+            a(href="/blackout")
+                #nightsky
+                    canvas#bg(data-processing-sources="./content/sketches/nightsky.pde")
+            a(href="/exhibitions")
+                img#photo1(src="./content/img/index/exhibit1.jpg" alt="Exhibit 1" width="100%")
 
         #bottom-content
-            #photo2
-                img(src="./content/img/index/exhibit2.jpg" alt="Exhibit 2" width="100%")
+            a(href="/exhibitions")
+                #photo2
+                    img(src="./content/img/index/exhibit2.jpg" alt="Exhibit 2" width="100%")
 
             #tati-photo
                 img(src="./content/img/index/tati.gif" alt="Tati gif" width="100%")
