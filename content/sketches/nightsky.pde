@@ -7,7 +7,7 @@ int[] populations = {
 int index = 0;
 
 int X, Y, nX, nY, oldH, oldW;
-int delay = 64;
+int delay = 12;
 Star[] stars;
 
 int topBuffer = 140;
@@ -20,8 +20,6 @@ void setup() {
   //oldH= $(document).height() + topBuffer;
   //oldW= $(document).width();
   size($("#bg").width(), $("#bg").height());
-  console.log("bg height");
-  console.log($("#bg").height());
   noStroke();
   X = width / 2;
   Y = height / 2;
